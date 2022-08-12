@@ -1,0 +1,8 @@
+/* eslint-disable prettier/prettier */
+import { PartialType } from '@nestjs/mapped-types';
+import { CreateDepartmentDto } from './create-department.dto';
+
+export class UpdateDepartmentDto extends PartialType(CreateDepartmentDto) {
+    // readonly id: number;
+    // readonly department: string;
+}
